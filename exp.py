@@ -27,6 +27,79 @@ ai.collect_data()
 ai.train_model()
 ai.diagnose("scan1")
 
+#1b Waymo Autonomous Vehicles
+class WaymoSafetyInitiative:
+    def __init__(self):
+        self.is_trained = False
+        self.transparency_reports = []
+        self.public_events = []
+
+    def train_system(self):
+        print("Training autonomous vehicle system...")
+        self.is_trained = True
+        print("System trained successfully.")
+
+    def generate_report(self, incidents, decision_logic):
+        report = {"Incidents": incidents, "Logic": decision_logic}
+        self.transparency_reports.append(report)
+        print("Transparency report created.")
+
+    def organize_event(self, name, location):
+        self.public_events.append({"Event": name, "Location": location})
+        print(f"Organized public event: {name} at {location}.")
+
+    def simulate_crash_scenario(self, scenario, outcome):
+        print(f"Simulating crash scenario: {scenario}")
+        print(f"Outcome: {outcome}")
+
+    def results(self):
+        print("\nResults:")
+        print("Transparency Reports:", self.transparency_reports)
+        print("Public Events:", self.public_events)
+
+# Usage
+waymo = WaymoSafetyInitiative()
+waymo.train_system()
+waymo.generate_report(["Collision with pole"], "Prioritize human safety")
+waymo.organize_event("Safety Demo", "San Francisco")
+waymo.simulate_crash_scenario("Pedestrian crossing", "Emergency stop executed")
+waymo.results()
+
+#1c Autonomous Drones in Defense
+class AutonomousDroneProgram:
+    def __init__(self):
+        self.drones = []
+        self.efficiency_improved = False
+        self.ethics_compliance = True
+
+    def develop_drones(self, num_drones):
+        self.drones = [{"id": i, "status": "Operational"} for i in range(1, num_drones + 1)]
+        print(f"{num_drones} drones developed for surveillance.")
+
+    def promote_ethical_use(self):
+        self.ethics_compliance = True
+        print("Ethical standards for human oversight promoted.")
+
+    def improve_efficiency(self):
+        self.efficiency_improved = True
+        print("Efficiency improved by reducing human involvement.")
+
+    def assess_risks(self):
+        print("Risk Assessment: Addressed concerns over unintended escalation.")
+
+    def results(self):
+        print("\nProgram Results:")
+        print(f"Drones Developed: {len(self.drones)}")
+        print(f"Ethical Compliance: {self.ethics_compliance}")
+        print(f"Efficiency Improved: {self.efficiency_improved}")
+
+# Usage
+drones = AutonomousDroneProgram()
+drones.develop_drones(5)
+drones.promote_ethical_use()
+drones.improve_efficiency()
+drones.assess_risks()
+drones.results()
 
 #2 Experiment 2: Exploratory Data Analysis on Linear Regression
 import numpy as np
